@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		AB13ECEF26B89A5D002F56FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB13ECED26B89A5D002F56FF /* Main.storyboard */; };
 		AB13ECF126B89A5F002F56FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB13ECF026B89A5F002F56FF /* Assets.xcassets */; };
 		AB13ECF426B89A5F002F56FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB13ECF226B89A5F002F56FF /* LaunchScreen.storyboard */; };
+		AB13ED0126B89C57002F56FF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13ED0026B89C57002F56FF /* ViewModel.swift */; };
+		AB13ED0326B89D62002F56FF /* TaxUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13ED0226B89D62002F56FF /* TaxUseCase.swift */; };
+		AB13ED0526B89D8B002F56FF /* TaxRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13ED0426B89D8B002F56FF /* TaxRepository.swift */; };
+		AB13ED0726B89D95002F56FF /* TaxUserDefaultsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13ED0626B89D95002F56FF /* TaxUserDefaultsDataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		AB13ECF026B89A5F002F56FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB13ECF326B89A5F002F56FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB13ECF526B89A5F002F56FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB13ED0026B89C57002F56FF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AB13ED0226B89D62002F56FF /* TaxUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxUseCase.swift; sourceTree = "<group>"; };
+		AB13ED0426B89D8B002F56FF /* TaxRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxRepository.swift; sourceTree = "<group>"; };
+		AB13ED0626B89D95002F56FF /* TaxUserDefaultsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxUserDefaultsDataStore.swift; sourceTree = "<group>"; };
 		D183578B62819F8EAB383374 /* Pods-RxSwift-Tax-Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Tax-Practice.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift-Tax-Practice/Pods-RxSwift-Tax-Practice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +64,6 @@
 				D183578B62819F8EAB383374 /* Pods-RxSwift-Tax-Practice.debug.xcconfig */,
 				97D6FF1A94693F5CF4AA23A2 /* Pods-RxSwift-Tax-Practice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +88,59 @@
 		AB13ECE626B89A5D002F56FF /* RxSwift-Tax-Practice */ = {
 			isa = PBXGroup;
 			children = (
+				AB13ECFD26B89B98002F56FF /* Model */,
+				AB13ECFC26B89B94002F56FF /* View */,
+				AB13ECFB26B89B8F002F56FF /* VIewModel */,
 				AB13ECE726B89A5D002F56FF /* AppDelegate.swift */,
 				AB13ECE926B89A5D002F56FF /* SceneDelegate.swift */,
-				AB13ECEB26B89A5D002F56FF /* ViewController.swift */,
-				AB13ECED26B89A5D002F56FF /* Main.storyboard */,
 				AB13ECF026B89A5F002F56FF /* Assets.xcassets */,
 				AB13ECF226B89A5F002F56FF /* LaunchScreen.storyboard */,
 				AB13ECF526B89A5F002F56FF /* Info.plist */,
 			);
 			path = "RxSwift-Tax-Practice";
+			sourceTree = "<group>";
+		};
+		AB13ECFB26B89B8F002F56FF /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AB13ED0026B89C57002F56FF /* ViewModel.swift */,
+			);
+			path = VIewModel;
+			sourceTree = "<group>";
+		};
+		AB13ECFC26B89B94002F56FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB13ECFE26B89BA3002F56FF /* Storyboard */,
+				AB13ECFF26B89BA8002F56FF /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB13ECFD26B89B98002F56FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB13ED0226B89D62002F56FF /* TaxUseCase.swift */,
+				AB13ED0426B89D8B002F56FF /* TaxRepository.swift */,
+				AB13ED0626B89D95002F56FF /* TaxUserDefaultsDataStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB13ECFE26B89BA3002F56FF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AB13ECED26B89A5D002F56FF /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		AB13ECFF26B89BA8002F56FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB13ECEB26B89A5D002F56FF /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +257,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB13ED0326B89D62002F56FF /* TaxUseCase.swift in Sources */,
 				AB13ECEC26B89A5D002F56FF /* ViewController.swift in Sources */,
 				AB13ECE826B89A5D002F56FF /* AppDelegate.swift in Sources */,
+				AB13ED0526B89D8B002F56FF /* TaxRepository.swift in Sources */,
+				AB13ED0126B89C57002F56FF /* ViewModel.swift in Sources */,
+				AB13ED0726B89D95002F56FF /* TaxUserDefaultsDataStore.swift in Sources */,
 				AB13ECEA26B89A5D002F56FF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
