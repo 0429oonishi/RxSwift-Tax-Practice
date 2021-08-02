@@ -103,6 +103,12 @@
                             <constraint firstItem="U0m-vr-WWh" firstAttribute="centerY" secondItem="3MW-rj-Lmp" secondAttribute="centerY" id="yke-bd-sgB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="calculateButton" destination="nCd-8c-6bi" id="Kj5-8S-afp"/>
+                        <outlet property="consumptionTaxTextField" destination="Fku-gK-V2H" id="JBD-0t-Tkr"/>
+                        <outlet property="excludingTaxTextField" destination="nBX-ai-0FO" id="Fk8-YN-4aj"/>
+                        <outlet property="includingTaxLabel" destination="HCq-f1-k3W" id="31n-Pb-cNR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eui-cv-PiI" sceneMemberID="firstResponder"/>
             </objects>
