@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KfQ-d9-9f5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="H6D-4b-ON1">
+            <objects>
+                <viewController id="KfQ-d9-9f5" customClass="ViewController" customModule="oonishiReonKadai12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DZx-qu-C7I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="税抜金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibc-zf-6m7">
+                                <rect key="frame" x="30" y="74" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消費税率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMQ-gh-H0d">
+                                <rect key="frame" x="30" y="125" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="税込金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MW-rj-Lmp">
+                                <rect key="frame" x="30" y="246" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="円" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0m-vr-WWh">
+                                <rect key="frame" x="343.5" y="244.5" width="20.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLt-nh-rCj">
+                                <rect key="frame" x="364" y="123.5" width="20" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Bfd-SS-yJH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="円" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWG-PK-Kub">
+                                <rect key="frame" x="363.5" y="72.5" width="20.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCd-8c-6bi">
+                                <rect key="frame" x="191.5" y="192.5" width="31" height="30"/>
+                                <state key="normal" title="計算"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nBX-ai-0FO">
+                                <rect key="frame" x="130" y="67.5" width="203.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fku-gK-V2H">
+                                <rect key="frame" x="130" y="118.5" width="204" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCq-f1-k3W">
+                                <rect key="frame" x="328" y="244.5" width="12.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CFg-Ij-Sze"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U0m-vr-WWh" firstAttribute="leading" secondItem="HCq-f1-k3W" secondAttribute="trailing" constant="3" id="1BJ-Hq-pSq"/>
+                            <constraint firstItem="bWG-PK-Kub" firstAttribute="centerY" secondItem="Ibc-zf-6m7" secondAttribute="centerY" id="1lF-L5-slU"/>
+                            <constraint firstItem="3MW-rj-Lmp" firstAttribute="leading" secondItem="CFg-Ij-Sze" secondAttribute="leading" constant="30" id="1t0-Pb-fvb"/>
+                            <constraint firstItem="nBX-ai-0FO" firstAttribute="leading" secondItem="Ibc-zf-6m7" secondAttribute="trailing" constant="30" id="3VA-0u-lJx"/>
+                            <constraint firstItem="nBX-ai-0FO" firstAttribute="centerY" secondItem="Ibc-zf-6m7" secondAttribute="centerY" id="47c-GA-XJw"/>
+                            <constraint firstItem="kMQ-gh-H0d" firstAttribute="leading" secondItem="CFg-Ij-Sze" secondAttribute="leading" constant="30" id="5CA-Jr-uJ1"/>
+                            <constraint firstItem="HCq-f1-k3W" firstAttribute="centerY" secondItem="3MW-rj-Lmp" secondAttribute="centerY" id="7pp-Sw-7e7"/>
+                            <constraint firstItem="bLt-nh-rCj" firstAttribute="centerY" secondItem="kMQ-gh-H0d" secondAttribute="centerY" id="AbH-nc-WeH"/>
+                            <constraint firstItem="kMQ-gh-H0d" firstAttribute="top" secondItem="Ibc-zf-6m7" secondAttribute="bottom" constant="30" id="FAr-l7-TZc"/>
+                            <constraint firstItem="CFg-Ij-Sze" firstAttribute="trailing" secondItem="bWG-PK-Kub" secondAttribute="trailing" constant="30" id="FcB-IH-DiD"/>
+                            <constraint firstItem="Fku-gK-V2H" firstAttribute="centerY" secondItem="kMQ-gh-H0d" secondAttribute="centerY" id="H1j-hH-Nge"/>
+                            <constraint firstItem="CFg-Ij-Sze" firstAttribute="trailing" secondItem="U0m-vr-WWh" secondAttribute="trailing" constant="50" id="IFd-9M-57m"/>
+                            <constraint firstItem="bLt-nh-rCj" firstAttribute="leading" secondItem="Fku-gK-V2H" secondAttribute="trailing" constant="30" id="PJc-at-OtZ"/>
+                            <constraint firstItem="nCd-8c-6bi" firstAttribute="top" secondItem="Fku-gK-V2H" secondAttribute="bottom" constant="40" id="Pvx-jA-gwA"/>
+                            <constraint firstItem="3MW-rj-Lmp" firstAttribute="top" secondItem="kMQ-gh-H0d" secondAttribute="bottom" constant="100" id="QvM-vm-dJG"/>
+                            <constraint firstItem="Ibc-zf-6m7" firstAttribute="leading" secondItem="CFg-Ij-Sze" secondAttribute="leading" constant="30" id="Rcf-q8-t5U"/>
+                            <constraint firstItem="CFg-Ij-Sze" firstAttribute="trailing" secondItem="bLt-nh-rCj" secondAttribute="trailing" constant="30" id="Tak-1C-gH7"/>
+                            <constraint firstItem="Ibc-zf-6m7" firstAttribute="top" secondItem="CFg-Ij-Sze" secondAttribute="top" constant="30" id="W3L-bt-P3w"/>
+                            <constraint firstItem="bWG-PK-Kub" firstAttribute="leading" secondItem="nBX-ai-0FO" secondAttribute="trailing" constant="30" id="e9l-Qf-Jdu"/>
+                            <constraint firstItem="Fku-gK-V2H" firstAttribute="leading" secondItem="kMQ-gh-H0d" secondAttribute="trailing" constant="30" id="jea-uw-UDa"/>
+                            <constraint firstItem="nCd-8c-6bi" firstAttribute="centerX" secondItem="DZx-qu-C7I" secondAttribute="centerX" id="utB-8n-nbJ"/>
+                            <constraint firstItem="U0m-vr-WWh" firstAttribute="centerY" secondItem="3MW-rj-Lmp" secondAttribute="centerY" id="yke-bd-sgB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eui-cv-PiI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
