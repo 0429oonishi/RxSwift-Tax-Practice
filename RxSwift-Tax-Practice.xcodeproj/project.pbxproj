@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77D4C13ECBB95B88C867931F /* Pods_RxSwift_Tax_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F6ED1020FC422A9F1FD896 /* Pods_RxSwift_Tax_Practice.framework */; };
 		AB13ECE826B89A5D002F56FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13ECE726B89A5D002F56FF /* AppDelegate.swift */; };
 		AB13ECEA26B89A5D002F56FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13ECE926B89A5D002F56FF /* SceneDelegate.swift */; };
 		AB13ECEC26B89A5D002F56FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13ECEB26B89A5D002F56FF /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39F6ED1020FC422A9F1FD896 /* Pods_RxSwift_Tax_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_Tax_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97D6FF1A94693F5CF4AA23A2 /* Pods-RxSwift-Tax-Practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Tax-Practice.release.xcconfig"; path = "Target Support Files/Pods-RxSwift-Tax-Practice/Pods-RxSwift-Tax-Practice.release.xcconfig"; sourceTree = "<group>"; };
 		AB13ECE426B89A5D002F56FF /* RxSwift-Tax-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-Tax-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB13ECE726B89A5D002F56FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB13ECE926B89A5D002F56FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		AB13ECF026B89A5F002F56FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB13ECF326B89A5F002F56FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB13ECF526B89A5F002F56FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D183578B62819F8EAB383374 /* Pods-RxSwift-Tax-Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Tax-Practice.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift-Tax-Practice/Pods-RxSwift-Tax-Practice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77D4C13ECBB95B88C867931F /* Pods_RxSwift_Tax_Practice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A16CDFC519D868277C2613E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39F6ED1020FC422A9F1FD896 /* Pods_RxSwift_Tax_Practice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5313E702C6DCD55AA1D5A93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D183578B62819F8EAB383374 /* Pods-RxSwift-Tax-Practice.debug.xcconfig */,
+				97D6FF1A94693F5CF4AA23A2 /* Pods-RxSwift-Tax-Practice.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AB13ECDB26B89A5D002F56FF = {
 			isa = PBXGroup;
 			children = (
 				AB13ECE626B89A5D002F56FF /* RxSwift-Tax-Practice */,
 				AB13ECE526B89A5D002F56FF /* Products */,
+				A5313E702C6DCD55AA1D5A93 /* Pods */,
+				A16CDFC519D868277C2613E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB13ECF826B89A5F002F56FF /* Build configuration list for PBXNativeTarget "RxSwift-Tax-Practice" */;
 			buildPhases = (
+				92F3BE0B48FEF663826954EC /* [CP] Check Pods Manifest.lock */,
 				AB13ECE026B89A5D002F56FF /* Sources */,
 				AB13ECE126B89A5D002F56FF /* Frameworks */,
 				AB13ECE226B89A5D002F56FF /* Resources */,
+				8132242B09E5121F9E811923 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8132242B09E5121F9E811923 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwift-Tax-Practice/Pods-RxSwift-Tax-Practice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwift-Tax-Practice/Pods-RxSwift-Tax-Practice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwift-Tax-Practice/Pods-RxSwift-Tax-Practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92F3BE0B48FEF663826954EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwift-Tax-Practice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB13ECE026B89A5D002F56FF /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		AB13ECF926B89A5F002F56FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D183578B62819F8EAB383374 /* Pods-RxSwift-Tax-Practice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		AB13ECFA26B89A5F002F56FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D6FF1A94693F5CF4AA23A2 /* Pods-RxSwift-Tax-Practice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
