@@ -18,6 +18,11 @@
 		AB13ED0326B89D62002F56FF /* TaxUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13ED0226B89D62002F56FF /* TaxUseCase.swift */; };
 		AB13ED0526B89D8B002F56FF /* TaxRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13ED0426B89D8B002F56FF /* TaxRepository.swift */; };
 		AB13ED0726B89D95002F56FF /* TaxUserDefaultsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13ED0626B89D95002F56FF /* TaxUserDefaultsDataStore.swift */; };
+		AB13ED0926B8C795002F56FF /* FullNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13ED0826B8C795002F56FF /* FullNameViewController.swift */; };
+		AB13ED0B26B8C8EA002F56FF /* FullNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13ED0A26B8C8EA002F56FF /* FullNameViewModel.swift */; };
+		AB13ED0E26B8CBB8002F56FF /* FullNameUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13ED0D26B8CBB8002F56FF /* FullNameUseCase.swift */; };
+		AB13ED1226B8CBFC002F56FF /* FullNameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13ED1126B8CBFC002F56FF /* FullNameRepository.swift */; };
+		AB13ED1426B8CD22002F56FF /* FullNameDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13ED1326B8CD22002F56FF /* FullNameDataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,11 @@
 		AB13ED0226B89D62002F56FF /* TaxUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxUseCase.swift; sourceTree = "<group>"; };
 		AB13ED0426B89D8B002F56FF /* TaxRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxRepository.swift; sourceTree = "<group>"; };
 		AB13ED0626B89D95002F56FF /* TaxUserDefaultsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxUserDefaultsDataStore.swift; sourceTree = "<group>"; };
+		AB13ED0826B8C795002F56FF /* FullNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNameViewController.swift; sourceTree = "<group>"; };
+		AB13ED0A26B8C8EA002F56FF /* FullNameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNameViewModel.swift; sourceTree = "<group>"; };
+		AB13ED0D26B8CBB8002F56FF /* FullNameUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNameUseCase.swift; sourceTree = "<group>"; };
+		AB13ED1126B8CBFC002F56FF /* FullNameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNameRepository.swift; sourceTree = "<group>"; };
+		AB13ED1326B8CD22002F56FF /* FullNameDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNameDataStore.swift; sourceTree = "<group>"; };
 		D183578B62819F8EAB383374 /* Pods-RxSwift-Tax-Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Tax-Practice.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift-Tax-Practice/Pods-RxSwift-Tax-Practice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				AB13ED0026B89C57002F56FF /* ViewModel.swift */,
+				AB13ED0A26B8C8EA002F56FF /* FullNameViewModel.swift */,
 			);
 			path = VIewModel;
 			sourceTree = "<group>";
@@ -120,9 +131,8 @@
 		AB13ECFD26B89B98002F56FF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AB13ED0226B89D62002F56FF /* TaxUseCase.swift */,
-				AB13ED0426B89D8B002F56FF /* TaxRepository.swift */,
-				AB13ED0626B89D95002F56FF /* TaxUserDefaultsDataStore.swift */,
+				AB13ED0F26B8CBBA002F56FF /* Tax */,
+				AB13ED1026B8CBC3002F56FF /* FullName */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,8 +149,29 @@
 			isa = PBXGroup;
 			children = (
 				AB13ECEB26B89A5D002F56FF /* ViewController.swift */,
+				AB13ED0826B8C795002F56FF /* FullNameViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB13ED0F26B8CBBA002F56FF /* Tax */ = {
+			isa = PBXGroup;
+			children = (
+				AB13ED0226B89D62002F56FF /* TaxUseCase.swift */,
+				AB13ED0426B89D8B002F56FF /* TaxRepository.swift */,
+				AB13ED0626B89D95002F56FF /* TaxUserDefaultsDataStore.swift */,
+			);
+			path = Tax;
+			sourceTree = "<group>";
+		};
+		AB13ED1026B8CBC3002F56FF /* FullName */ = {
+			isa = PBXGroup;
+			children = (
+				AB13ED0D26B8CBB8002F56FF /* FullNameUseCase.swift */,
+				AB13ED1126B8CBFC002F56FF /* FullNameRepository.swift */,
+				AB13ED1326B8CD22002F56FF /* FullNameDataStore.swift */,
+			);
+			path = FullName;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,11 +290,16 @@
 			files = (
 				AB13ED0326B89D62002F56FF /* TaxUseCase.swift in Sources */,
 				AB13ECEC26B89A5D002F56FF /* ViewController.swift in Sources */,
+				AB13ED0926B8C795002F56FF /* FullNameViewController.swift in Sources */,
 				AB13ECE826B89A5D002F56FF /* AppDelegate.swift in Sources */,
+				AB13ED0B26B8C8EA002F56FF /* FullNameViewModel.swift in Sources */,
 				AB13ED0526B89D8B002F56FF /* TaxRepository.swift in Sources */,
+				AB13ED1226B8CBFC002F56FF /* FullNameRepository.swift in Sources */,
 				AB13ED0126B89C57002F56FF /* ViewModel.swift in Sources */,
 				AB13ED0726B89D95002F56FF /* TaxUserDefaultsDataStore.swift in Sources */,
+				AB13ED1426B8CD22002F56FF /* FullNameDataStore.swift in Sources */,
 				AB13ECEA26B89A5D002F56FF /* SceneDelegate.swift in Sources */,
+				AB13ED0E26B8CBB8002F56FF /* FullNameUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

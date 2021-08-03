@@ -6,24 +6,38 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class FullNameViewController: UIViewController {
-
+final class FullNameViewController: UIViewController {
+    
+    @IBOutlet private weak var lastNameTextField: UITextField!
+    @IBOutlet private weak var firstNameTextField: UITextField!
+    @IBOutlet private weak var plusButton: UIButton!
+    @IBOutlet private weak var fullNameLabel: UILabel!
+    
+    private let viewModel: FullNameViewModelType = FullNameViewModel()
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        setupBindings()
+        viewModel.inputs.viewDidLoad()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupBindings() {
+        plusButton.rx.tap
+            .withLatestFrom(lastNameTextField.rx.text)
+            .withLatestFrom(firstNameTextField.rx.text,
+                            resultSelector: { ($0, $1) })
+            .subscribe(onNext: viewModel.inputs.plusButtonDidTapped)
+            .disposed(by: disposeBag)
+        
+        viewModel.outputs.fullNameText
+            .drive(fullNameLabel.rx.text)
+            .disposed(by: disposeBag)
     }
-    */
-
+    
 }
