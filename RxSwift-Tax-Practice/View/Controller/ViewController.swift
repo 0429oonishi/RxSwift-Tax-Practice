@@ -29,7 +29,8 @@ final class ViewController: UIViewController {
     
     private func setupBindings() {
         calculateButton.rx.tap
-            .withLatestFrom(excludingTaxTextField.rx.text)
+            .withLatestFrom(excludingTaxTextField.rx.text,
+                            resultSelector: { ($1) })
             .withLatestFrom(consumptionTaxTextField.rx.text,
                             resultSelector: { ($0, $1) })
             .subscribe(onNext: viewModel.inputs.calculateButtonDidTapped)

@@ -28,13 +28,15 @@ final class TaxUseCase {
     }
     private let includingTaxRelay = BehaviorRelay<Int?>(value: nil)
     private let disposeBag = DisposeBag()
-
+    
     private func setupBindings() {
+        // 消費税保存要求が来たらリポジトリで保存する
         saveConsumptionTaxTrigger
             .flatMapLatest(repository.save(consumptionTax:))
             .subscribe()
             .disposed(by: disposeBag)
         
+        // 消費税読み込み要求が来たらリポジトリから読み込んで結果をストリームに流す
         loadConsumptionTaxTrigger
             .flatMapLatest(repository.loadConsumptionTax)
             .bind(to: consumptionTaxRelay)
